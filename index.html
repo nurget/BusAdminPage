@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!----===== SweetAlert ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <title>Bubble Driver</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <span class="logo_name">BDriver</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">이용내역</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">로그아웃</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">다크모드</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+                    <button onclick="showAlert(), addData()"></button>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="검색해주세요...">
+            </div>
+
+            <img src="images/IMG_7909.jpg" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">대시보드</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-clock"></i>
+                        <span class="text">현재시간</span>
+                        <h1 id="h1-clock"></h1>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-bus"></i>
+                        <span class="text">현재정류장</span>
+                        <span class="number">경동대학교</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-info-circle"></i>
+                        <span class="text">버스정보</span>
+                        <span class="number">74바 1230</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">최근 이용내역</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data joined">
+                        <span class="data-title">예약시간</span>
+                        <span class="data-list">12:47:13</span>
+                        <span class="data-list">08:31:29</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">승차정류장</span>
+                        <span class="data-list">덕계동금강펜트리움</span>
+                        <span class="data-list">경동대학교</span>
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">하차정류장</span>
+                        <span class="data-list">상동슈퍼</span>
+                        <span class="data-list">양주주내우체국</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
